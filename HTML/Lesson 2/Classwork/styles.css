@@ -1,0 +1,44 @@
+body {
+    background-color: #252525;
+}
+p {
+    margin-top: 25px;
+    margin-left: 60px;
+}
+.one {
+    color: #fff;
+    height: 70px;
+    width: 200px;
+    border: #ffaa00 solid 5px;
+    border-radius: 50px;
+    margin: auto;
+
+}
+
+.two {
+    color: #fff;
+    height: 70px;
+    width: 200px;
+    border: #2efff2 solid 5px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.three {
+    color: #fff;
+    height: 70px;
+    width: 200px;
+    border: #ff55a7 solid 5px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 20px;
+}.fore {
+     color: #fff;
+     height: 70px;
+     width: 200px;
+     border: #ff4040 solid 5px;
+     border-radius: 50px;
+     margin: auto;
+     margin-top: 20px;
+ }
