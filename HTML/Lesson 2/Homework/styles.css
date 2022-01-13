@@ -1,13 +1,18 @@
-body{width: 900px;height: 700px}
+body{width: 800px; height: 700px}
 .A{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-box-shadow: #454545 40px 40px 1px 10px;border: #676565 solid 2px}
+box-shadow: #454545 40px 40px 1px 10px;border: #676565 solid 2px;}
+
 .B{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-    box-shadow: #454545 40px 40px 20px 10px;border: #676565 solid 2px}
+    box-shadow: #454545 40px 40px 20px 10px;border: #676565 solid 2px;}
+
 .C{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-    box-shadow: #454545 50px 50px 20px 10px;border: #676565 solid 2px}
+    box-shadow: #454545 50px 50px 20px 10px;border: #676565 solid 2px;}
+
 .D{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-    box-shadow: #b4aeae 50px 50px 20px 10px;border: #676565 solid 2px}
+    box-shadow: #b4aeae 50px 50px 20px 10px;border: #676565 solid 2px;}
+
 .E{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-    box-shadow: #454545 40px 40px 20px 10px;border: #676565 solid 2px;border-radius: 12px}
+    box-shadow: #454545 40px 40px 20px 10px;border: #676565 solid 2px;border-radius: 12px; }
+
 .F{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
-    box-shadow: #b4aeae 40px 40px 20px 10px;border: #676565 solid 2px;border-radius: 12px}
+    box-shadow: #b4aeae 40px 40px 20px 10px;border: #676565 solid 2px;border-radius: 12px;}
