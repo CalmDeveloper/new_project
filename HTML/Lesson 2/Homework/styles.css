@@ -16,3 +16,6 @@ box-shadow: #454545 40px 40px 1px 10px;border: #676565 solid 2px;}
 
 .F{width: 300px;height: 300px;background-color: #ffaa00; text-align: center;margin: 80px;box-sizing: border-box;
     box-shadow: #b4aeae 40px 40px 20px 10px;border: #676565 solid 2px;border-radius: 12px;}
+p {
+    padding-top: 135px;
+}
