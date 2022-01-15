@@ -1,0 +1,55 @@
+.main {
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    height: 600px;
+border: black solid 3px ;
+    border-radius: 40px;
+}
+
+.top {
+    background-color: silver;
+    height: 200px;
+    width: 450px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+
+}
+
+.triple {
+    flex-direction: row;
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.B {
+    background-color: silver;
+    height: 200px
+}
+
+.D {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.C, .D, .E {
+    width: 100px;
+    height: 100px;
+    background-color: silver
+}
+
+.F{width: 100px;
+height: 325px;
+background-color: silver;
+margin-top: 25px;
+margin-bottom: 25px}
+
+.bottom{display: flex;
+flex-direction: column;
+margin: 25px}
+
+.bigbottom{display: flex;
+flex-direction: row;
+margin-right: 25px}
