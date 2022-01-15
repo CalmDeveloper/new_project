@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #efeaea;
+    margin: 0;
+
+}
+.header{
+    display: flex;
+    height: 150px;
+    background-color: #e6f7b1;
+    width: 650px;
+
+
+
+}
+.midleBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+}
+
+.menu {
+    width: 150px;
+    height: 300px;
+    background-color: #ffb8ff;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.youngerBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+
+}
+.post{width: 481px;
+height:140px;
+background-color: #a0e2ff;
+margin-bottom: 20px}
+
+.footer{width: 650px;
+height: 150px;
+background-color: #ffffca;
+}
+.main>.header>h2{margin-left: 220px;margin-top: 65px}
+h2{text-align: center;
+margin-top: 60px}
+.main>.midleBlock>.menu>h2{margin-top: 120px}
