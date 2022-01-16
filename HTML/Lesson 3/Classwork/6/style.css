@@ -1,0 +1,35 @@
+.main{display: flex;
+flex-direction: column;
+}
+
+.top{display: flex;
+flex-direction: row;}
+
+.home{
+    width: 200px;height: 200px;
+    background-color: #1515ec;
+    margin-right: 10px;
+}
+.about{
+    width: 200px;height: 200px;
+    background-color: #1515ec;
+    margin-left: 10px;
+}
+.kabobs{width: 420px;
+height: 250px;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: #1515ec}
+
+.mini{
+    width: 126px;
+height: 126px;
+background-color: #1a1a69
+}
+
+#simple{margin-left: 20px;
+margin-right: 20px}
+
+h2{text-align: center}
+.bottom{display: flex;
+flex-direction: row;}
