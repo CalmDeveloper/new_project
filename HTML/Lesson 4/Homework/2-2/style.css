@@ -1,38 +1,23 @@
-.main{
-    display: flex;
-    flex-direction: column;
+.fd-c{display: flex;
+    flex-direction: column}
+.fd-r{display: flex;
+    flex-direction: row}
 
-}
-.top{
-    width: 350px;
-    height: 150px;
-    background-color: #6395ec;
+.width340{width: 340px}
+.width100{width: 100px}
+.height100{height: 100px}
+.height150{height: 150px}
+.height400{height: 400px}
 
+.bg-top{background-color: #2269bb}
+.bg-centr{background-color: #16457a;}
+.text-centr{display: flex;
+justify-content: center;
+text-align: center;
+align-items: center}
 
-}
-.centr_yonger{
-    width: 100px;
-    height: 100px;
-    background-color: #1515ec;
+.marginleft{margin-left: 20px}
+.marginright{margin-right: 20px}
+.marginbottom{margin-bottom: 20px}
+.margintop{margin-top: 20px}
 
-}
-.centr{display: flex;
-flex-direction: row;
-margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.bottom{
-    width: 350px;
-    height: 300px;
-    background-color: #6395ec;
-
-}
-#simple{margin-right: 25px;
-margin-left: 25px}
-h2{text-align: center;
-}
-
-.main>.top>h2{margin-top: 60px}
-.main>.bottom>h2{margin-top: 120px}
-/*Як інакше відцентрувати текст по вертикалі?*/
