@@ -1,0 +1,66 @@
+.width440 {
+    width: 440px
+}
+
+.height120 {
+    height: 120px
+}
+
+.width150 {
+    width: 150px
+}
+
+.height440 {
+    height: 440px
+}
+
+.width250 {
+    width: 250px
+}
+
+.height150 {
+    height: 200px
+}
+
+.bg-top {
+    background-color: #e6f7b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-bottom {
+    background-color: #ffffca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-right {
+    background-color: #9fe2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-left {
+    background-color: #ecaaec;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.margin20 {
+    margin: 20px
+}
+
+.fd-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-r {
+    display: flex;
+    flex-direction: row
+}
+
