@@ -1,31 +1,126 @@
-.top{width: 600px;
-height: 100px;
-background-color: silver;
-margin-left: 10px;
-margin-right: 10px}
 
-.mini{width: 100px;
-height: 100px;
-background-color: silver;
-    margin: 10px;
+.bg-grey {
+    background-color: #ced8e1
 }
 
-.box_mini{
-    width: 370px;
-    height: 260px;
+.bg-dark {
+    background-color: #102b3e
+}
+
+.width150 {
+    width: 150px
+}
+
+.height150 {
+    height: 150px
+}
+
+.width800 {
+    width: 800px
+}
+
+.height400 {
+    height: 400px
+}
+
+.width700 {
+    width: 700px
+}
+
+.height350 {
+    height: 350px
+}
+
+.width250 {
+    width: 250px
+}
+
+.height300 {
+    height: 300px
+}
+
+
+.height50 {
+    height: 50px
+}
+
+.circle {
+    border-radius: 50%
+}
+
+.circle-corner-small {
+    border-radius: 20px;}
+.circle-corner-small_10{
+    border-radius: 10px;
+}
+
+.circle-corner {
+    border-radius: 40px;
+    border: #add0e0 solid 2px;
+}
+
+.fd-c {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;}
-
-.H{ width: 240px;
-height: 230px;
-background-color: silver;
-margin-top: 10px;
-margin-bottom: 20px;
+    flex-direction: column
 }
 
-
-.bottom{
+.fd-r {
     display: flex;
-    flex-direction: row;
+    flex-direction: row
 }
+
+.position {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.border {
+    border: #add0e0 solid 5px;
+}
+
+.bg-blue{background-color: #3ac6ea}
+.height40{height: 40px}
+
+
+.position_row-end{
+    display: flex;
+    justify-content: flex-end;}
+
+.align-items-c{align-items: center}
+
+.padding_left50{padding-left: 50px}
+.border_box{box-sizing: border-box}
+.justify-content_centr{ display:flex;
+    justify-content: center}
+
+.height1500{height: 1500px}
+
+.flex_wrap{flex-wrap: wrap}
+
+.margin20{margin: 20px}
+.marginbottom{margin-bottom: 10px}
+.width_inherit{width: 100%}
+.width200{width: 200px}
+.borderbottom_none{border-bottom:none}
+.width60{width: 60px}
+.height30{height: 30px}
+.marginleft30{margin-left: 30px}
+
+.width30{width: 30px}
+.margin_right20{margin-right: 5px}
+.margin3{margin: 3px}
+
+.width390{width: 390px}
+.margin_top{margin-top: 70px}
+.width100{width: 100px}
+.height70{height: 70px}
+.height3{height: 3px}
+.height60{height: 60px}
+.margin_left20{margin-left: 20px}
+.margin_right20{margin-right: 20px}
+
+.margin_auto{margin:0 5px}
+
+
+
