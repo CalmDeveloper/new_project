@@ -36,12 +36,7 @@ height: 200px}
 
 .Ad{width: 190px;
     height: 200px}
-/*.second_box{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    column-gap: 10px;*/
-/*    height: 200px;*/
-/*}*/
+
 
 .Types{width: 600px;
 height: 710px;
@@ -64,4 +59,53 @@ height: 710px;
 }
 .Footer{width: 1010px;
     height: 150px;
+}
+
+
+@media screen and (min-width: 330px) and (max-width: 1020px) {
+    main{max-width: 350px;
+    }
+h3{font-size: 0.8em; margin: 0}
+    p{font-size: 0.8em;
+    margin: 0}
+
+    .logo{width: 100px;
+        height:50px;
+    }
+    .Header{width: 200px;
+        height:50px;}
+    .Nav{width: 330px;
+        height: 50px}
+
+    .Bath{width: 170px;
+        height: 60px}
+
+    .Ad{width: 130px;
+        height: 60px}
+
+    .Types{width: 330px;
+        height: 150px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .Related{width: 330px;
+        height: 70px;
+        margin-top: 0;
+        }
+    .Store{width: 140px;
+        height: 50px;
+        margin-top: 0;
+    }
+    .Tools{width: 160px;
+        height:50px;
+        margin-left: 0;
+        margin-top: 0;
+
+    }
+    .Footer{width: 330px;
+        height: 50px;
+    }
+
+
 }
