@@ -1,0 +1,67 @@
+p{color: #ffaa00}
+h3{color: #efeaea}
+
+.position{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column}
+
+.bg{background-color: #676767}
+
+.main{display: flex;
+    flex-direction: row;
+column-gap: 10px;
+row-gap: 10px;
+margin: 0;
+max-width: 1020px;
+flex-wrap: wrap}
+
+.top{display: flex;
+flex-direction: row;
+column-gap: 10px;
+row-gap: 10px}
+
+.logo{width: 200px;
+    height:150px;
+}
+.Header{width: 800px;
+    height:150px;
+}
+
+.Nav{width: 200px;
+height: 600px}
+
+.Bath{width: 600px;
+height: 200px}
+
+.Ad{width: 190px;
+    height: 200px}
+/*.second_box{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    column-gap: 10px;*/
+/*    height: 200px;*/
+/*}*/
+
+.Types{width: 600px;
+height: 710px;
+margin-left: 210px;
+    margin-top: -400px;
+}
+
+.Related{width: 190px;
+height: 710px;
+    margin-top: -400px;}
+
+.Store{width: 200px;
+    height:150px;
+    margin-top: -320px;
+}
+.Tools{width: 200px;
+    height:150px;
+    margin-left: -210px;
+    margin-top: -160px;
+}
+.Footer{width: 1010px;
+    height: 150px;
+}
