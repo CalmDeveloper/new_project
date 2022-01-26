@@ -21,7 +21,7 @@
     flex-direction: row;
     align-items: center;
     box-sizing: border-box;
-    position: fixed;
+    position: absolute;
 }
 
 .left {
@@ -47,54 +47,54 @@
     box-sizing: border-box;
     margin-top: 16px;
     margin-bottom: 16px;
-    position: fixed;
+    position: absolute;
     left: 36px;
 }
 
 .one {
-    position: fixed;
+    position: absolute;
     left: 301px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .two {
-    position: fixed;
+    position: absolute;
     left: 438px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .tree {
-    position: fixed;
+    position: absolute;
     left: 555px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .fore {
-    position: fixed;
+    position: absolute;
     left: 696px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .fife {
-    position: fixed;
+    position: absolute;
     left: 830px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .six {
-    position: fixed;
+    position: absolute;
     left: 1048px;
     margin-top: 28px;
     margin-bottom: 31px;
 }
 
 .seven {
-    position: fixed;
+    position: absolute;
     left: 1123px;
     margin-top: 28px;
     margin-bottom: 31px;
@@ -107,7 +107,7 @@
     border-radius: 4px;
     background-color: var(--black);
     color: var(--white);
-    position: fixed;
+    position: absolute;
     left: 1245px;
     margin-top: 15px;
     margin-bottom: 14px;
@@ -135,7 +135,7 @@
 
 
 .second_container {
-    position: fixed;
+    position: absolute;
     top: 83px;
     width: 1440px;
     height: 886px;
@@ -178,7 +178,7 @@ height: 256px;
     height: 54px;
     padding: 15px 29px 15px 29px;}
 
-    .second_l_b_t a{
+.second_l_b_t a{
         font-size: 16px;
         line-height: 24px;
         font-style: normal;
@@ -190,7 +190,7 @@ height: 256px;
     background-color: var(--orange);
     border: none;
     color: var(--black);
-    position: fixed;
+    position: absolute;
     left: 147px;
     cursor: pointer;
 }
@@ -200,7 +200,8 @@ height: 256px;
     border-radius: 4px;
     background-color: var(--fone);
     color: #000000;
-    position: fixed;
+    position: absolute;
+    cursor: pointer;
     left: 326px;
 }
 
@@ -209,12 +210,17 @@ height: 256px;
     width: 600px;
     height: 886px;
     box-sizing: border-box;
-    background-color: var(--orange)
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
 }
 
 .photo{width: 608px;
-height: 541px;
+
+    height: 541px;
 position: absolute;
-right: 102px;
+   left: 730px;
     top: 172px;
+
 }
+
