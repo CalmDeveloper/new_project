@@ -135,7 +135,7 @@
 
 
 .second_container {
-    position: absolute;
+    position: static;
     top: 83px;
     width: 1440px;
     height: 886px;
@@ -221,6 +221,23 @@ height: 256px;
 position: absolute;
    left: 730px;
     top: 172px;
+}
 
+.third{width: 1440px;
+height: 1000px;
+background-color: var(--fone);
+    justify-content: center;
+    display: flex;
+}
+
+.third_top {
+    width: 547px;
+    height: 96px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 48px;
+    color: var(--black);
+    background-color: var(--fone);
+    margin-top: 189px;
 }
 
