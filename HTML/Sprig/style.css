@@ -4,7 +4,7 @@
 .main{display: flex;
     flex-direction: column;
     background-color: var(--fone);
-   align-items: center;
+   /*align-items: center;*/
 }
 
 :root {
@@ -195,7 +195,7 @@ height: 256px;
 
 
     cursor: pointer;}
-.position{ position: absolute;
+.position_one{position: absolute;
     left: 147px;}
 .color a{color: var(--black);}
 
@@ -307,11 +307,14 @@ Letter-spacing: 0.34px;
     margin-top: 191px;
     width: 711px;
 height: 80px;
-text-align: center}
+text-align: center;
+margin-left: 365px}
 
 .fifth_bottom{width: 911px;
-height: 528px}
+height: 528px;
+margin-left: 265px}
 .fifth_button a{margin-top: 113px;
     color: var(--black);
 }
-.fifth_button {margin-top: 113px;}
+.fifth_button {margin-top: 113px;
+margin-left: 638px}
