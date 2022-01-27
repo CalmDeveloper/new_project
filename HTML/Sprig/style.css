@@ -4,6 +4,7 @@
 .main{display: flex;
     flex-direction: column;
     background-color: var(--fone);
+   align-items: center;
 }
 
 :root {
@@ -191,11 +192,14 @@ height: 256px;
     border-radius: 4px;
     background-color: var(--orange);
     border: none;
-    color: var(--black);
-    position: absolute;
-    left: 147px;
-    cursor: pointer;
-}
+
+
+    cursor: pointer;}
+.position{ position: absolute;
+    left: 147px;}
+.color a{color: var(--black);}
+
+
 .second_left_second_button {
     width: 156px;
     border: 1px solid var(--black);
@@ -226,7 +230,6 @@ position: absolute;
 }
 
 .third{width: 1440px;
-height: 1000px;
 background-color: var(--fone);
     flex-direction: column;
     align-items: center;
@@ -242,6 +245,8 @@ background-color: var(--fone);
     color: var(--black);
     background-color: var(--fone);
     margin-top: 189px;
+
+
 }
 
 .third_companies{width: 1106px;
@@ -261,3 +266,52 @@ box-sizing: border-box;
 
 }
 
+.fourth{width: 1376px;
+    height: 494px;
+    display: flex;
+    background-color: #51CEBC;
+    border-radius: 10px;
+    margin-left: 32px;
+    margin-top: 192px;
+}
+
+.fourth_left{
+    width: 698px;
+    height: 494px;
+}
+.fourth_right {display: flex;
+flex-direction: column;
+width: 50%;
+height: 100%}
+
+.fourth_text_big{
+    width: 557px;
+    height: 120px;
+    margin-top: 114px;
+    margin-right: 121px;
+    margin-bottom: 35px;
+font-size: 34px;
+line-height: 40px;
+    Vertical-align: Top;
+Letter-spacing: 0.34px;
+    color: var(--black);
+}
+.fourth_text_small{
+    width: 533px;
+    height: 84px;
+    margin-left: 0;
+    margin-right: 145px;
+}
+
+.fifth_top{
+    margin-top: 191px;
+    width: 711px;
+height: 80px;
+text-align: center}
+
+.fifth_bottom{width: 911px;
+height: 528px}
+.fifth_button a{margin-top: 113px;
+    color: var(--black);
+}
+.fifth_button {margin-top: 113px;}
