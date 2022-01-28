@@ -416,7 +416,8 @@ color: var(--black);}
     background-color: var(--fone);
     box-sizing: border-box;
     height: 54px;
-    padding: 14px 29px 16px 29px;;
+    padding: 14px 29px 16px 29px;
+    cursor: pointer;
 }
 
 .seventh_l_b_t a{
@@ -579,4 +580,44 @@ color: #375361}
     color: var(--black)}
 .line_color{
     background-color: #C3CACD;
+}
+.ninth{width: 1292px;
+    height: 634px;
+    display: flex;
+    flex-direction: row;
+margin-top: 184px;
+margin-left: 148px}
+
+.ninth_left{width: 669px;
+    height: 634px;
+}
+.ninth_left_top{width: 122px;
+height: 24px;
+margin-bottom: 15px}
+
+.ninth_left_centr{width: 669px;
+    height: 120px;
+    margin-bottom: 37px;
+}
+.ninth_left_bottom{width: 667px;
+    height: 84px;
+    margin-bottom: 36px;
+}
+
+
+
+
+.ninth_right{
+    height: 418px;
+    margin-top: -24px;
+    position: relative;
+    right: -185px;
+
+}
+.ninth_last_button{width: 208px;
+height: 54px;
+background-color: var(--orange);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 14px 29px 16px 29px;;
 }
