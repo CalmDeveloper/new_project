@@ -4,7 +4,7 @@
 .main{display: flex;
     flex-direction: column;
     background-color: var(--fone);
-   /*align-items: center;*/
+   align-items: center;
 }
 
 :root {
@@ -271,7 +271,6 @@ box-sizing: border-box;
     display: flex;
     background-color: #51CEBC;
     border-radius: 10px;
-    margin-left: 32px;
     margin-top: 192px;
 }
 
@@ -488,7 +487,8 @@ height: 960px;
 .eight_one{width: 84px;
 height: 24px;
 margin-top: 96px;
-margin-left: 122px}
+margin-left: 122px
+}
 .eight_two{width: 1064px;
     height: 128px;
     font-style: normal;
@@ -497,7 +497,8 @@ margin-left: 122px}
     line-height: 64px;
     color: var(--black);
 margin-top: 10px;
-margin-left: 122px}
+margin-left: 122px
+}
 
 .eight_block{width: 1440px;
     height: 702px;
@@ -611,7 +612,7 @@ margin-bottom: 15px}
     height: 418px;
     margin-top: -24px;
     position: relative;
-    right: -185px;
+    right: -257px;
 
 }
 .ninth_last_button{width: 208px;
