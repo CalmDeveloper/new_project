@@ -476,3 +476,107 @@ text-decoration: none;}
     margin-top: 200px}
 .seventh_right_bottom{height: 397px;
     margin-top: 170px}
+
+.clear{width: 1440px;
+height: 148px}
+
+.eight{width: 1440px;
+height: 960px;
+    background-color: #F2EDE7;
+}
+.eight_one{width: 84px;
+height: 24px;
+margin-top: 96px;
+margin-left: 122px}
+.eight_two{width: 1064px;
+    height: 128px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+    color: var(--black);
+margin-top: 10px;
+margin-left: 122px}
+
+.eight_block{width: 1440px;
+    height: 702px;
+    display: flex;
+}
+.eight_block_left{
+    width: 467px;
+    height: 484px;
+    margin-left: 122px;
+  margin-top: 122px;
+    margin-right: 141px;
+}
+.eight_block_right{
+    width: 589px;
+    height: 702px;
+    margin-top: 122px;
+}
+.eight_block_right_line{width: 589px;
+height: 2px;
+background-color: #C9316F}
+
+
+section {
+    display: block;
+}
+.accordion {
+    background-color: #F2EDE7;
+    width: 589px;
+    margin: 0 auto;
+}
+.accordion section {
+    background-color: #F2EDE7;
+}
+.accordion h1, .accordion p {
+    margin: 0;
+}
+.accordion p {
+    padding: 5px;
+}
+.accordion h1 a {
+    display: block;
+    position: relative;
+    padding: 8px;
+    color: #333;
+    text-decoration: none;
+}
+.accordion h1 a:hover {
+    background: var(--orange);
+}
+.accordion h1 + div {
+    height: 0;
+    overflow: hidden;
+    -moz-transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;}
+
+.accordion :target h1 a:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-top: 5px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.accordion :target h1 + div {
+    height: auto;
+}
+
+.accordion p{
+    Font-size: 17px;
+Line-height: 28px;
+color: #375361}
+
+.accordion h1{
+    Font-size: 24px;
+    Line-height: 32px;
+    color: var(--black)}
+.line_color{
+    background-color: #C3CACD;
+}
