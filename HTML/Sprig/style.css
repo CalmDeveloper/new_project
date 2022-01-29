@@ -622,3 +622,45 @@ background-color: var(--orange);
     cursor: pointer;
     padding: 14px 29px 16px 29px;;
 }
+
+
+
+.tenth{display: flex;
+flex-direction: row;
+    width: 1440px;
+    height: 584px;
+    margin-bottom: 46px;
+}
+.tenth_left{background-color: #F2EDE7;
+width: 582px;
+    height: 584px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+}
+.tenth_left_top{width: 103px;
+height: 23px;
+margin-top: 80px;
+
+margin-bottom: 17px}
+
+.tenth_left_centr {
+    width: 314px;
+    height: 64px;
+
+    font-size: 24px;
+    line-height: 32px;
+
+}
+.tenth_left_bottom{width: 325px;
+height: 84px;
+    margin-top: 27px;
+    margin-bottom: 36px;
+}
+.tenth_right{width: 794px;
+    height: 584px;
+}
+.marginleft116{margin-left: 116px;
+}
+.seventh_button_general{background-color: #F2EDE7}
