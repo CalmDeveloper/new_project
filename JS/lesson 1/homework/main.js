@@ -118,13 +118,86 @@
 // firstName = `Taras`;
 // middleName = `Ivanovych`;
 // lastName = `Maksymiv`
-
 // let person = [firstName, middleName, lastName];
+
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+// let name = prompt("Вкажіть своє ім'я");
+// let middleName = prompt("Вкажіть ім'я по батькові");
+// let age = prompt("Вкажіть свій вік");
+// alert("Вітаю"+" "+name+" "+middleName+"."+" "+"Тобі"+" "+age+" "+"років.");
 
-let name = prompt("Вкажіть своє ім'я");
-let middleName = prompt("Вкажіть ім'я по батькові");
-let age = prompt("Вкажіть свій вік");
-alert("Вітаю"+" "+name+" "+middleName+"."+" "+"Тобі"+" "+age+" "+"років.");
+
+// За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+//     let a = 100; let b = '100'; let c = true;
+// let a = 100;
+// let b = '100';
+// let c = true;
+// console.log(typeof (a));
+// console.log(typeof (b));
+// console.log(typeof (c));
+
+
+// - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+//     В однакових виразах не використовувати однакові оператори!!!
+//     5 ? 6 -> true
+// let bool = 5 !== 6;
+// console.log(bool);
+
+
+// // 5 ? 6 -> false
+// let bool = 5 == 6;
+// console.log(bool);
+
+
+// // 5 ? 6 -> false
+// let bool = 5 === 6;
+// console.log(bool);
+
+// 5 ? 6 -> false
+// let bool = 5 > 6;
+// console.log(bool);
+
+
+// 10 ? 10 -> true
+// let bool = 10 === 10;
+// console.log(bool);
+
+// 10 ? 10 -> true
+// let bool = 10 == 10;
+// console.log(bool);
+
+// 10 ? 10 -> false
+// let bool = 10 < 10;
+// console.log(bool);
+
+// 10 ? 10 -> false
+// let bool = 10 !== 10;
+// console.log(bool);
+
+
+// 10 ? 10 -> false
+// let bool = 10 > 10;
+// console.log(bool);
+
+// 123 ? '123' -> false
+// let bool = 123 === `123`;
+// console.log(bool);
+
+// 123 ? '123' -> true
+// let bool = 123 == `123`;
+// console.log(bool);
+
+
+// - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+//     let str = "20";
+// let a = 5;
+// document.write(str + a + "<br/>");
+// document.write(str - a + "<br/>");
+// document.write(str * "2" + "<br/>");
+// document.write(str / 2 + "<br/>");
+// 205
+// 15
+// 40
+// 10
