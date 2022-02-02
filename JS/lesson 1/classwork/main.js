@@ -73,7 +73,7 @@ console.log(book2)
     heightC = 10
     let dC = 4
     let v = 3.14 * dC * heightC
-    console.log(v + 'cm2')
+    console.log(v + 'm2')
 }
 
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
