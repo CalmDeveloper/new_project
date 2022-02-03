@@ -169,9 +169,9 @@
 // }
 
 // тернарка
-let number = +prompt('Введіть число від -100 до 100')
-let a = (number >= -100 && number <= -1) ? alert(number + ' ' + 'це негативне число') :
-    (number >= 1 && number <= 100) ? alert(number + ' ' + 'це позитивне число') :
-        (number === 0) ? alert('це число є нулем') : alert(`щось пішло не так`)
+// let number = +prompt('Введіть число від -100 до 100')
+// let a = (number >= -100 && number <= -1) ? alert(number + ' ' + 'це негативне число') :
+//     (number >= 1 && number <= 100) ? alert(number + ' ' + 'це позитивне число') :
+//         (number === 0) ? alert('це число є нулем') : alert(`щось пішло не так`)
 
 
