@@ -91,7 +91,6 @@ switch (numberOfday){
     case 7: console.log("Неділя- готувати їсти");
         break;
     default: console.log('Перевірьте правильність введених даних');
-        break;
 }
 
 
