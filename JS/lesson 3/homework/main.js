@@ -42,9 +42,10 @@
 // За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 // document.write(`<div`)
 //     let i = 0;
-// while (i < 20; i++)
+// while (i < 20; )
 // {
 //  let  = document.write(`<h1> text </h1>`)
+// i++;
 // }
 // document.write(`</div`)
 
