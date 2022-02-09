@@ -118,6 +118,23 @@
 // document.write(rand(10, 20))
 
 
-// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+// // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+// let arr = [1, 2, 3,]
+//
+// function oposite(arr) {
+//
+//     let two = [];
+//     for (let elementarr of arr) {
+//         for (let i = arr.length - 1; i >= 0; i--) {
+//             two.push(arr[i]);
+//         }
+//         return two
+//     }
+//
+// }
+//
+// let a = oposite(arr)
+// console.log(a)
+
 
 
