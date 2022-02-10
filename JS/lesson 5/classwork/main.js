@@ -1,124 +1,147 @@
 // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
-// function minNum(a,b,c) {
-//     if(a < b && a < c ){console.log(a)}
-// else if (b < a && b < c ){console.log(b)}
-// else if(c < a && c < b ) {console.log(c)}
+// let minnum =(a,b,c)=> {
+//     if (a<b && a<c){console.log(a)}
+//     else if (b<a && b<c){console.log(b)}
+//     else if (c<a && c<b ){console.log(c)}
 // }
-// minNum(50, 20, 30)
+// minnum( 10,1000,100)
 
 // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
-// function maxNum(a,b,c) {
-//     if(a > b && a > c ){console.log(a)}
-//     else if (b > a && b > c ){console.log(b)}
-//     else if(c > a && c > b ) {console.log(c)}
+//
+// let maxnum =(a,b,c)=> {
+//     if (a>b && a>c){console.log(a)}
+//     else if (b>a && b>c){console.log(b)}
+//     else if (c>a && c>b ){console.log(c)}
 // }
-// maxNum(50, 20, 30)
+// maxnum( 10,1000,100)
+
+
 // - створити функцію яка повертає найбільше число з масиву
 // let masiv = [0,5,7,9,6,5];
+// let maxOfarr = (masiv)=>{
+//     let max = masiv[0]
+//     for (const masivElement of masiv) {
+//         if(masivElement > max){max = masivElement}
+//     }
+//     return max
+// }
 //
-// function masivMax(array) {
-// let max = array[0]
-// for (const number of array) {
-//     if (number> max){max = number};
-// }
-// return max;
-// }
-// let a = masivMax(masiv);
+// let a = maxOfarr(masiv)
 // console.log(a)
-
-
-
-
-
 
 // - створити функцію яка повертає найменьше число з масиву
-// let ppp = [10,30,50,-200,1000,-5];
-// function ddd(array) {
-// let min = array[0]
-// for (const number of array) {
-//     if (number < min){min = number}
-// }
-//     return min;
-// }
-// let b = ddd(ppp)
-// console.log(b)
-
-// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-// let ppp = [10,30,50,-200,1000,-5];
-// function masSum(arr) {
-//     let res =0;
-//     for (const arrElement of arr) {
-//         res += arrElement; // res = res + arrElement
+//
+//     let masivD = [-100,5,7,9,6,5];
+// let minarr=(masivD)=>{
+//     let min = masivD[0]
+//     for (let masivDElement of masivD) {
+//         if(min>masivDElement) {min=masivDElement}
+//
 //     }
-// return res;
-//
+//     return min
 // }
-//
-// console.log(masSum(ppp));
+// let b = minarr(masivD)
+// console.log(b)
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+// let mas = [1,2,20,50]
+// let res = 0;
+// let sum = (mas)=>{
+//     for (let ma of mas) {
+//         res = ma+res
+//     }
+//     return res
+// }
+// let c = sum(mas)
+// console.log(c)
+
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-// let ggg = [10,5,6,20,5,7,3];
-// function sameNum(array) {
-//     let res = 0
-//     for (const arrayElement of array) {
-//         res = (res + arrayElement)
-//         result = res/array.length
+
+// let mass = [1,2,20,50]
+// let ress = 0;
+// let sums = (mass)=>{
+//     for (let ma of mass) {
+//         ress = (ma+ress)/mass.length
 //     }
-//     return result;
+//     return Math.floor(ress)
 // }
-// let a = sameNum(ggg);
-// console.log(a)
-
-
+// let f = sums(mass)
+// console.log(f)
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-// let kkk = [1,2,3,4,5657,68,79,79];
-// function minandmax(array) {
-//     let min = array[0];
-//     let max = array[0];
-//     for (const arrayElement of array) {
-//         if (max < arrayElement){max = arrayElement}
-//         if (min > arrayElement){min = arrayElement}
-//
-//     }
-//     console.log(max);
-//     return (min)
-//
-//
-//
+// let doom = (...args)=> {
+//     let min = args[0]
+//     let max  = args[0]
+//     for (let arg of args) {
+//         if(max<arg){max = arg}
+//         if(min>arg){min = arg}
 // }
-// let a = minandmax(kkk)
-
+//
+//
+//     console.log(max)
+//     return (min)
+// }
+// let d = doom(2,50,100,-5,0)
+// console.log(d)
 
 // - створити функцію яка заповнює масив рандомними числами
 //     (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
-// function pushRandomNum(length) {
-//     let num = [];
-// for (let i= 0; i < length; i++) {
-//     num.push(Math.floor(Math.random()*100))
-// }
-// return num;
-// }
-// let a = pushRandomNum(length)
-// document.write(pushRandomNum(100))
 
-
+// let rand = (length)=>{
+//     let ranmas = [];
+//     for (let i = 0; i<length;i++){
+//         ranmas.push(Math.round(Math.random()*100))
+//     }
+//     return ranmas
+// }
+// let s = rand(length)
+// console.log(rand(100))
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 //
-// function rand(length, limit ) {
-//
-//     let num = [];
-//     for (let i = 0; i < length; i++){
-//         num.push(Math.round(Math.random() * limit ));
+
+// let rand2 = (limit, length)=>{
+//     let ram =[];
+//     for (let i=0; i<length;i++){
+//         ram.push(Math.round(Math.random() * limit));
 //     }
-//     return num;
+//     return ram
 // }
-
-// document.write(rand(10, 20))
-
+//
+// let g = rand2(10,50)
+// console.log(g)
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+// let fr = [1,2,3]
+// let op = [];
+// let oposite = (fr)=>{
+//     for (let i = fr.length - 1; i >= 0; i--) {
+//          op.push(fr[i]);
+//
+//     }
+//     return op
+// }
+//
+// let h = oposite(fr)
+// console.log(h)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let arr = [1,2,3]
 // function oposite(arr) {
 //
