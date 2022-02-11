@@ -62,17 +62,19 @@
 // let arr = [0,1,2,3,4];
 // let arr = [0,0,1,0];
 
-let nonzero = [];
-let zero = [];
-let good = [];
-let fun = (arr)=>{
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] !==0){nonzero.push(arr[i])}else
-        if (arr[i] ===0){zero.push(arr[i]);
-        }
+// let nonzero = [];
+// let zero = [];
+// let good = [];
+// let fun = (arr)=>{
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] !==0){nonzero.push(arr[i])}else
+//         if (arr[i] ===0){zero.push(arr[i]);
+//         }
+//
+// }
+// return good.concat(nonzero,zero)
+// }
+// let a = fun(arr)
+// console.log(a)
 
-}
-return good.concat(nonzero,zero)
-}
-let a = fun(arr)
-console.log(a)
+
