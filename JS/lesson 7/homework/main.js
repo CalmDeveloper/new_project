@@ -59,15 +59,15 @@ class Client {
 }
 let  clear1 = [
 new Client(1,`taras`,`godmilk`,`ddd@gmail.com`, 30679558757,`book`),
-new Client(1,`dima`,`gooilk`,`ddd@gmail.com`, 30679558757, `milk`),
-new Client(1,`olga`,`grvvdmilk`,`ddd@gmail.com`, 30679558757, `water`),
-new Client(1,`petro`,`ggmilk`,`ddd@gmail.com`, 30679558757, `pizza`),
-new Client(1,`ostap`,`gcmilk`,`ddd@gmail.com`, 30679558757,`table`),
-new Client(1,`ivan`,`gonilk`,`ddd@gmail.com`, 30679558757,`towels`),
-new Client(1,`nazar`,`godmilk`,`ddd@gmail.com`, 30679558757,`knife`),
-new Client(1,`olesya`,`godmilk`,`ddd@gmail.com`, 30679558757,`icecream`),
-new Client(1,`njd`,`gofilk`,`ddd@gmail.com`, 30679558757,`headphons`),
-new Client(1,`dvd`,`golk`,`ddd@gmail.com`, 30679558757,`hat`),
+new Client(2,`dima`,`gooilk`,`ddd@gmail.com`, 30679558757, `milk`),
+new Client(3,`olga`,`grvvdmilk`,`ddd@gmail.com`, 30679558757, `water`),
+new Client(4,`petro`,`ggmilk`,`ddd@gmail.com`, 30679558757, `pizza`),
+new Client(5,`ostap`,`gcmilk`,`ddd@gmail.com`, 30679558757,`table`),
+new Client(6,`ivan`,`gonilk`,`ddd@gmail.com`, 30679558757,`towels`),
+new Client(7,`nazar`,`godmilk`,`ddd@gmail.com`, 30679558757,`knife`),
+new Client(8,`olesya`,`godmilk`,`ddd@gmail.com`, 30679558757,`icecream`),
+new Client(9,`njd`,`gofilk`,`ddd@gmail.com`, 30679558757,`headphons`),
+new Client(10,`dvd`,`golk`,`ddd@gmail.com`, 30679558757,`hat`),
 ]
 console.log(clear1)
 
