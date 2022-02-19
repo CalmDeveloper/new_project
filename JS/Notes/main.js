@@ -9,3 +9,28 @@
 // return box
 // }, {od:[], even: []})
 // console.log(reduce)
+
+
+function usersDataBase() {
+    let users = [
+        {name: `Bogdan`},
+        {name: `Taras`},
+        {name: `Oleg`},
+    ];
+
+    return  {
+        addUser: function (user) {
+            if (user.name){users.push(user);
+                console.log(`user was added`)}else
+            {console.log(`error`)}
+        },
+        getUsers: function () {
+            console.log(users);
+
+        }
+    }
+}
+let m = usersDataBase()
+console.log(m)
+m.addUser({name: 'Bogdan',})
+m.getUsers()

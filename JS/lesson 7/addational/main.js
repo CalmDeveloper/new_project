@@ -1,3 +1,4 @@
+// additional.txt////////////////////////////////
 
 // - Створити клас або функцію конструктор, за допомоги якої можна створювати об'єкти наступного вигляду.
 // Конструктор повинен приймати значення для кожної властивості, в т.ч і для властивостей внутрішніх об'єктів
@@ -154,4 +155,81 @@
 
 
 
+// сlosures.pdf/           /////////////////////////////////////////
 
+// let balance = 100;
+// let transeactionLimite = 100;
+// let historyLogs = [];
+// let card1 = [];
+// let card2 = [];
+// let card3 = [];
+// let key = number
+// let userCard = (number)=>{
+//     if (number===1){return card1}
+//     if (number===2){return card2}
+//     if (number===3){return card3}
+//     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
+// }
+//
+// let putCredits = (...arg)=>{
+//
+//     return balance = balance + arg };
+//
+// let takeCredits = (...arg)=>{
+//     if (arg<=transeactionLimite && arg > balance){return balance = balance - arg}else
+//     {console.error(`You cant take more then ${transeactionLimite} or ${balance}`)}
+//     }
+//
+// let setTranseactionLimite = (...arg)=>{return transeactionLimite = arg + transeactionLimite};
+//
+// let transferCredits = (credit,keyOfCard)=>{
+//     if (credit<=transeactionLimite && credit < balance){return balance = balance-credit}
+// }
+
+
+
+
+let balance = 100;
+let transeactionLimite = 100;
+let historyLogs = [];
+let card1 = [];
+let card2 = [];
+let card3 = [];
+let key = `number`
+let userCard = (number)=>{
+    if (number===1){return card1}
+    if (number===2){return card2}
+    if (number===3){return card3}
+    if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
+}
+
+
+
+
+class Card1 {
+    constructor(balance, transeactionLimite, key) {
+        this.balance = balance;
+        this.transeactionLimite = transeactionLimite;
+        // this.historyLogs = historyLogs;
+        this.key = key;
+    }
+    putCredits = (...arg)=>{
+
+        return balance = balance + arg };
+
+    takeCredits = (...arg)=>{
+        if (arg<=transeactionLimite && arg > balance){return balance = balance - arg}else
+        {console.error(`You cant take more then ${transeactionLimite} or ${balance}`)}
+    }
+
+    setTranseactionLimite = (...arg)=>{return transeactionLimite = arg + transeactionLimite};
+
+    transferCredits = (credit,keyOfCard)=>{
+        if (credit<=transeactionLimite && credit < balance){return balance = balance-credit;
+        }
+    }
+
+}
+
+let a = new Card1(balance,transeactionLimite,key)
+console.log(a)
