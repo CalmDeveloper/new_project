@@ -31,5 +31,5 @@ console.log(box)
 
 
 for (const box1 of box) {
-   console.log(box1)
+    console.log(box1)
 }
