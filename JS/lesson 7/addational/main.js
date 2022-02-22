@@ -188,48 +188,58 @@
 
 
 
+// let userCard = (number)=>{
+//
+//     if (number===1){return card1}
+//     if (number===2){return card2}
+//     if (number===3){return card3}
+//     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
+// }
 
-let balance = 100;
-let transeactionLimite = 100;
-let historyLogs = [];
-let card1 = [];
-let card2 = [];
-let card3 = [];
-let key = `number`
-let userCard = (number)=>{
-    if (number===1){return card1}
-    if (number===2){return card2}
-    if (number===3){return card3}
-    if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
-}
+function userCard() {
+    let balance = 100;
+    let transeactionLimite = 100;
+    let historyLogs = [];
+    let key = 1
+    let CardOptions =[];
+
+    CardOptions.push(balance,transeactionLimite)
 
 
 
 
-class Card1 {
-    constructor(balance, transeactionLimite, key) {
-        this.balance = balance;
-        this.transeactionLimite = transeactionLimite;
-        // this.historyLogs = historyLogs;
-        this.key = key;
-    }
-    putCredits = (...arg)=>{
+    return  {
+        putCredits: (...arg) => {
+            balance = balance + arg
+        },
 
-        return balance = balance + arg };
+        takeCredits: (...arg) => {
+            if (arg <= transeactionLimite && arg > balance) {
+                return balance = balance - arg
+            } else {
+                console.error(`You cant take more then ${transeactionLimite} or ${balance}`)
+            }
+        },
 
-    takeCredits = (...arg)=>{
-        if (arg<=transeactionLimite && arg > balance){return balance = balance - arg}else
-        {console.error(`You cant take more then ${transeactionLimite} or ${balance}`)}
-    }
+        setTranseactionLimite: (...arg) => {
+            return transeactionLimite = arg + transeactionLimite
+        },
 
-    setTranseactionLimite = (...arg)=>{return transeactionLimite = arg + transeactionLimite};
+        transferCredits: (credit, keyOfCard) => {
+            if (credit <= transeactionLimite && credit < balance) {
+                return balance = balance - credit
+            }
+        },
+        GetCardOptions: ()=>{
+            for (const cardOption of CardOptions) {
 
-    transferCredits = (credit,keyOfCard)=>{
-        if (credit<=transeactionLimite && credit < balance){return balance = balance-credit;
+                console.log(cardOption)
+
+            }
         }
-    }
 
+    }
 }
 
-let a = new Card1(balance,transeactionLimite,key)
-console.log(a)
+let a = userCard()
+    a.GetCardOptions()
