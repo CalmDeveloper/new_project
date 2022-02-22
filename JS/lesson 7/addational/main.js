@@ -203,10 +203,11 @@ function userCard() {
     let key = 1
     let CardOptions =[];
 
+
     CardOptions.push(balance,transeactionLimite)
-
-
-
+// побудувати обєкт
+//  як записувати логи в масив
+// яким чином карти  можна повязати
 
     return  {
         putCredits: (...arg) => {
