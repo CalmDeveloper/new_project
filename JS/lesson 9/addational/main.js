@@ -235,34 +235,69 @@
 
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
 
-// Хочу виконати цю задачу циклом. Не можу витягнути такі обєкти як address, company.
-//     Буду радий якщо підкажете помилку. Витратив методом тику багато часу. Результату  нема.
 
 for (const usersListElement of usersList) {
+
     let main = document.createElement("div")
+    let id = document.createElement("div")
+    let name = document.createElement("div")
+    let username = document.createElement("div")
+    let email = document.createElement("div")
+    id.innerText = usersListElement.id;
+    name.innerText = usersListElement.name;
+    username.innerText = usersListElement.username;
+    email.innerText = usersListElement.email;
+
+
+    let address = document.createElement("div")
+    address.innerHTML = `<ul>Address Info:</ul>`
+    let street = document.createElement("li")
+    let suite = document.createElement("li")
+    let city = document.createElement("li")
+    let zipcode = document.createElement("li")
+
+    street.innerText = usersListElement.address.street
+    suite.innerText = usersListElement.address.suite
+    city.innerText = usersListElement.address.city
+    zipcode.innerText = usersListElement.address.zipcode
+
+
+    let geo = document.createElement("div")
+    geo.innerHTML = `<ul>Geo Info:</ul>`
+    let lat = document.createElement("li")
+    let lng = document.createElement("li")
+
+    for (const geoKey in usersListElement.address.geo) {
+        lat.innerText = usersListElement.address.geo[geoKey]
+        lng.innerText = usersListElement.address.geo[geoKey]
+    }
+
+    let phone = document.createElement("div")
+    let website = document.createElement("div")
+    let company = document.createElement("div")
+    company.innerHTML = `<ul>Company Info:</ul>`
+
+    for (const keycompany in usersListElement.company) {
+        let infoCompany = document.createElement("li")
+        infoCompany.innerText = usersListElement.company[keycompany]
+        company.appendChild(infoCompany)
+    }
+
     document.body.append(main)
+    main.append(id, name, username, email, address, phone, website, company)
+    address.append(street, suite, city, zipcode, geo)
+    geo.append(lat, lng)
 
-    for (const key in usersListElement) {
-        if (typeof key ==="object"&& key.isArray===true){
-
-        for (const itemkey in key) {
-            {let div =  document.createElement("div")
-
-                main.appendChild(newdiv)
-                div.innerText = `${key[itemkey]}`}
-
-        }
-    }
-
-        {let div =  document.createElement("div")
-        main.appendChild(div)
-        div.innerText = `${usersListElement[key]}`}
+    let border = document.getElementsByTagName(`div`)
+    for (const borderElement of border) {
+        borderElement.style.border = `red solid 0.5px`
 
     }
-
 
 }
 
-// if (usersListElement===`company`&& usersListElement===`address`)
-// if (typeof key ==="object"&& key.isArray===true)
-//
+
+
+
+
+
