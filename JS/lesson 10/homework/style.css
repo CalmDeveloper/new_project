@@ -1,0 +1,29 @@
+/*fisrt task*/
+#text {
+    width: 200px;
+    height: 200px;
+    background: silver;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    background-color: coral;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 30px
+}
+
+.hide {
+    display: none;
+}
+
+/*second task*/
+.second_button{
+    width: 100px;
+    height: 50px;
+    background-color: #82ff50;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 30px
+}
