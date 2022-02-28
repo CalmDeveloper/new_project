@@ -63,7 +63,28 @@
 // кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
 //
-//
+let arr = [`рагуль`,`дурак`,`тупий`];
+let input = document.createElement(`input`);
+document.body.append(input);
+
+
+let  button = document.createElement(`button`);
+document.body.append(button);
+button.innerText = `Click`;
+
+button.addEventListener(`click`,function () {
+    let text = input.value.toLowerCase();
+    for (const mate of arr) {
+      if (mate ===text){alert(`Це матюк`)
+      text===``;
+      return}
+    }
+    if (text){alert(`Це не матюк`);
+        text===``;}
+
+})
+
+
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
