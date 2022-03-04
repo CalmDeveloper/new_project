@@ -43,7 +43,7 @@
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// -- взять массив пользователей
+// 3.-- взять массив пользователей
 // let usersWithAddress = [
 //     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
 //     {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
@@ -57,7 +57,7 @@
 //     {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
 //     {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
 // ];
-// // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
+// // 4.- Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
 // // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
 // // 2й - оставляет старше 29 лет включительно
 // // 3й - оставляет тех у кого город киев
@@ -152,21 +152,66 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
+// 5.*****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
 // НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
 //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
-function rec() {
-  let   forward = document.createElement(`button`);
-    let   back = document.createElement(`button`);
-    document.body.append(forward,back);
-    forward.innerText = `forward`;
-    back.innerText = `back`;
+// function rec() {
+//   let   forward = document.createElement(`button`);
+//     let   back = document.createElement(`button`);
+//     document.body.append(forward,back);
+//     forward.innerText = `forward`;
+//     back.innerText = `back`;
+// to be contined.......
+// }
+// rec();
 
 
-}
-rec();
-// - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 6.- Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
 //
-//     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
-// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+// let colorImage = document.getElementById("colorImage");
+// document.body.onkeydown = (e) => {
+//
+//   let  images = [
+//     "https://images.pexels.com/photos/57905/pexels-photo-57905.jpeg",
+//     "https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg",
+//     "https://cdn.eathappyproject.com/wp-content/uploads/2021/02/The-Most-Beautiful-Flowers-in-the-World-With-Name-and-Picture.jpg"
+//   ];
+//   let  imageNum = parseInt(colorImage.dataset.color);
+//   let  nextImg = (imageNum === 0 ? 1 : 0)||(imageNum === 1 ? 2 : 0);
+//   colorImage.src = images[nextImg];
+//   colorImage.dataset.color = nextImg;
+//   switch(e.key){
+//     case 'ArrowUp':
+//       colorImage.offsetTop--;
+//       break;
+//     case 'ArrowLeft':
+//       colorImage.offsetLeft--;
+//       break;
+//     case 'ArrowRight':
+//       colorImage.offsetTop++;
+//       break;
+//     case 'ArrowDown':
+//       colorImage.offsetLeft++;
+//       break;
+//   }
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//7.     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити.
+// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан.
+// function highlightSelection() {
+//   let selection = window.getSelection().getRangeAt(0);
+//   let selectedContent = selection.extractContents();
+//   let span = document.createElement("span");
+//   span.classList.add(`a`);
+//   span.appendChild(selectedContent);
+//   selection.insertNode(span);
+// }
+//
+// let p_arr = document.getElementsByTagName("p");
+// for (let i = 0; i < p_arr.length; i++) {
+//   p_arr[i].onmouseup = highlightSelection;
+// }
+
