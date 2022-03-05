@@ -156,15 +156,50 @@
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
 // НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
 //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
-// function rec() {
-//   let   forward = document.createElement(`button`);
-//     let   back = document.createElement(`button`);
-//     document.body.append(forward,back);
-//     forward.innerText = `forward`;
-//     back.innerText = `back`;
-// to be contined.......
-// }
-// rec();
+
+// Call with a document or HTML element
+function checkBodyElements(node) {
+let result = [];
+
+  // Recursive function
+  function traverseBody(node) {
+
+    if (node.childNodes.length) {
+
+      // Loop over every child node
+      node.childNodes.forEach(child => {
+
+        // If it's a type 1, call the function recursively
+        if (child.nodeType === 1) {
+          result.push(child.tagName)
+         traverseBody(child);
+        }
+
+      });
+
+    }
+
+  }
+  let   forward = document.createElement(`button`);
+  let   back = document.createElement(`button`);
+  document.body.append(forward,back);
+  forward.innerText = `forward`;
+  back.innerText = `back`;
+  // Get the body element
+  let body = node.querySelector('body');
+
+  forward.addEventListener('click', function (event) {
+    if (body) {
+      traverseBody(body);}
+    let element = event.currentTarget;
+    element.clicks = (element.clicks || 0) + 1;
+    console.log(result[element.clicks]);
+
+   back.addEventListener("click", function (){console.log(result[element.clicks-1]);})
+  });
+}
+
+window.onload = checkBodyElements(document);
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
