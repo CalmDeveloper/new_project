@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let JSONUSERS = localStorage.getItem(`favorites`);
+
+   let ParsJSON  = JSON.parse(JSONUSERS);
+   for (const parsJSONElement of ParsJSON) {
+       let div =  document.createElement(`div`)
+       div.innerText =parsJSONElement.name
+       document.body.append(div)
+   }
+</script>
+</body>
+</html>
