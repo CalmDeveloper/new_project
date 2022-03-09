@@ -195,25 +195,37 @@
 //     if (number===3){return card3}
 //     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
 // }
-
-function userCard() {
-    let balance = 100;
-    let transeactionLimite = 100;
-    let historyLogs = [];
-    let key = 1
-    let CardOptions =[];
-
-
-    CardOptions.push(balance,transeactionLimite)
-// побудувати обєкт
-//  як записувати логи в масив
-// яким чином карти  можна повязати
+let card1 = userCard(1);
+let card2 = userCard(2)
+let card3 = userCard(3)
+function userCard(number) {
+    // CardOptions.push(balance,transeactionLimite)
+    let one = [
+        {balance: 100},
+        {transeactionLimite: 100},
+        {historyLogs: []},
+        {key: 1},
+        {CardOptions: []}
+    ];
+    let two = [
+        {balance: 100},
+        {transeactionLimite: 100},
+        {historyLogs: []},
+        {key: 1},
+        {CardOptions: []}
+    ];
+    let three = [
+        {balance: 100},
+        {transeactionLimite: 100},
+        {historyLogs: []},
+        {key: 1},
+        {CardOptions: []}
+    ];
 
     return  {
         putCredits: (...arg) => {
             balance = balance + arg
         },
-
         takeCredits: (...arg) => {
             if (arg <= transeactionLimite && arg > balance) {
                 return balance = balance - arg
@@ -221,26 +233,40 @@ function userCard() {
                 console.error(`You cant take more then ${transeactionLimite} or ${balance}`)
             }
         },
-
         setTranseactionLimite: (...arg) => {
             return transeactionLimite = arg + transeactionLimite
         },
-
         transferCredits: (credit, keyOfCard) => {
             if (credit <= transeactionLimite && credit < balance) {
                 return balance = balance - credit
             }
         },
         GetCardOptions: ()=>{
-            for (const cardOption of CardOptions) {
 
-                console.log(cardOption)
-
-            }
+            // for (const cardOption of CardOptions) {
+            //     console.log(cardOption)
+            // }
         }
-
     }
 }
+card1.putCredits(100)
 
-let a = userCard()
-    a.GetCardOptions()
+userCard(1).putCredits(100)
+
+
+
+//
+// two:()=>{
+//     let balance = 100;
+//     let transeactionLimite = 100;
+//     let historyLogs = [];
+//     let key = 2
+//     let CardOptions =[];
+// },
+//     three:()=>{
+//     let balance = 100;
+//     let transeactionLimite = 100;
+//     let historyLogs = [];
+//     let key = 3
+//     let CardOptions =[];
+// }
