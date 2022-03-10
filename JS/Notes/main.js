@@ -70,5 +70,41 @@
 
 
 
+// // -створити форму з інпутами для name та age.
+// //     При відправці форми записати об'єкт в localstorage
+// let name = document.forms.myform.username;
+// let age = document.forms.myform.age;
+// let button = document.getElementById(`btn`);
+// let save = (UserName,Age)=>{
+//     let arr = {
+//         name: UserName,
+//         age: Age
+//     }
+//     let result = JSON.stringify(arr)
+//     localStorage.setItem(`User`,result)
+// }
+// button.onclick = function () {
+//     save(name.value,age.value)
+// }
 
+// -створити форму з інпутами для model,type та volume автівки.
+//     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
+let form = document.forms.fcar
+form.onsubmit = function (e){
+    e.preventDefault()
+}
+let model = document.forms.fcar.model;
+let type = document.forms.fcar.type
+let volume = document.forms.fcar.volume;
+let button = document.getElementById(`btn`);
+
+let save = (Model,Type,Volume)=>{
+    let carList = JSON.parse(localStorage.getItem(`car`)) || [];
+
+   carList.push({Model,Type,Volume})
+    localStorage.setItem(`car`,JSON.stringify(carList))
+}
+button.addEventListener(`click`,function () {
+    save(model.value,type.value,volume.value)
+})
 
