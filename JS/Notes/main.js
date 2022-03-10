@@ -70,7 +70,7 @@
 
 
 
-// // -створити форму з інпутами для name та age.
+// // 1.-створити форму з інпутами для name та age.
 // //     При відправці форми записати об'єкт в localstorage
 // let name = document.forms.myform.username;
 // let age = document.forms.myform.age;
@@ -87,24 +87,64 @@
 //     save(name.value,age.value)
 // }
 
-// -створити форму з інпутами для model,type та volume автівки.
+// 2.-створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
-let form = document.forms.fcar
-form.onsubmit = function (e){
-    e.preventDefault()
-}
-let model = document.forms.fcar.model;
-let type = document.forms.fcar.type
-let volume = document.forms.fcar.volume;
-let button = document.getElementById(`btn`);
+// let form = document.forms.fcar
+// form.onsubmit = function (e){
+//     e.preventDefault()
+// }
+// let model = document.forms.fcar.model;
+// let type = document.forms.fcar.type
+// let volume = document.forms.fcar.volume;
+// let button = document.getElementById(`btn`);
+//
+// let save = (Model,Type,Volume)=>{
+//     let carList = JSON.parse(localStorage.getItem(`car`)) || [];
+//
+//    carList.push({Model,Type,Volume})
+//     localStorage.setItem(`car`,JSON.stringify(carList))
+// }
+// button.addEventListener(`click`,function () {
+//     save(model.value,type.value,volume.value)
+// })
 
-let save = (Model,Type,Volume)=>{
-    let carList = JSON.parse(localStorage.getItem(`car`)) || [];
+// 3. є масив -
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// створити під кожен об'єкт свій блок з конопкою "додати до улюблених" при натисканні на яку об'єкт потрапляє до масиву favorites улюблених обраних об'єктів в локальному сховищі.
+// Створити сторніку favorites.html при переході на яку потрібно вивест в документ всіх обраних на попередньому етапі.
 
-   carList.push({Model,Type,Volume})
-    localStorage.setItem(`car`,JSON.stringify(carList))
-}
-button.addEventListener(`click`,function () {
-    save(model.value,type.value,volume.value)
-})
-
+// let favorites = JSON.parse(localStorage.getItem(`favorites`)) || [];
+//
+// for (const user of users) {
+//     let div = document.createElement(`div`);
+//     let button = document.createElement(`button`);
+//     button.innerText = `add to favorite`
+//     div.innerText = user.name;
+//     div.append(button)
+//     document.body.append(div);
+//  button.addEventListener(`click`,function () {
+//      if (!favorites){
+//          favorites = [];
+//          favorites.push(users)
+//          localStorage.setItem(`favorites`,JSON.stringify(favorites))
+//      }else
+//
+//      {
+//          JSON.parse(localStorage.getItem(favorites))
+//          favorites.push(user)
+//          localStorage.setItem(`favorites`,JSON.stringify(favorites))
+//      }
+//  })
+// }
