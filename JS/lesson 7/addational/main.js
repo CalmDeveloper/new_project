@@ -195,36 +195,29 @@
 //     if (number===3){return card3}
 //     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
 // }
-let card1 = userCard(1);
-let card2 = userCard(2)
-let card3 = userCard(3)
+
 function userCard(number) {
-    // CardOptions.push(balance,transeactionLimite)
-    let one = [
-        {balance: 100},
-        {transeactionLimite: 100},
-        {historyLogs: []},
-        {key: 1},
-        {CardOptions: []}
-    ];
-    let two = [
-        {balance: 100},
-        {transeactionLimite: 100},
-        {historyLogs: []},
-        {key: 1},
-        {CardOptions: []}
-    ];
-    let three = [
-        {balance: 100},
-        {transeactionLimite: 100},
-        {historyLogs: []},
-        {key: 1},
-        {CardOptions: []}
-    ];
+    let objCard = {
+        balance: 100,
+        transeactionLimite: 100,
+        historyLogs: [],
+        get key() {
+            if (num === undefined) {
+                num = ++counterKey
+            }
+            if (num >= 1 && num <= 3) {
+                return num
+            } else {
+                console.error(`Параметр key має бути числом в діапазоні від 1-3`);
+                return -1
+            }
+        }
+    }
+
 
     return  {
         putCredits: (...arg) => {
-            balance = balance + arg
+            balance = objCard.balance + arg
         },
         takeCredits: (...arg) => {
             if (arg <= transeactionLimite && arg > balance) {
@@ -242,31 +235,12 @@ function userCard(number) {
             }
         },
         GetCardOptions: ()=>{
-
-            // for (const cardOption of CardOptions) {
-            //     console.log(cardOption)
-            // }
+return objCard
         }
     }
 }
-card1.putCredits(100)
 
-userCard(1).putCredits(100)
+let a = userCard(1)
+a.putCredits(100)
+a.GetCardOptions
 
-
-
-//
-// two:()=>{
-//     let balance = 100;
-//     let transeactionLimite = 100;
-//     let historyLogs = [];
-//     let key = 2
-//     let CardOptions =[];
-// },
-//     three:()=>{
-//     let balance = 100;
-//     let transeactionLimite = 100;
-//     let historyLogs = [];
-//     let key = 3
-//     let CardOptions =[];
-// }
