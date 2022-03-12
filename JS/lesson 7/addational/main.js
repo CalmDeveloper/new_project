@@ -208,7 +208,7 @@ function userCard(number) {
             if (num >= 1 && num <= 3) {
                 return num
             } else {
-                console.error(`Параметр key має бути числом в діапазоні від 1-3`);
+                console.log(`Параметр key має бути числом в діапазоні від 1-3`);
                 return -1
             }
         }
