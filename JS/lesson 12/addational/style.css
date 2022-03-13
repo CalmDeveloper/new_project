@@ -1,0 +1,23 @@
+.father{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.usercard{border: gray solid 1px;
+    border-radius: 10px;
+    background: #f6f5f5;
+    padding: 10px;
+    margin: 10px;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usercard .postButton{margin-top: 5px}
+.usercard .commentButton{margin-top: 5px}
+
+.postButton{cursor: pointer}
+.commentButton{cursor: pointer}
+
+.usercard:hover{background-color: gainsboro}
