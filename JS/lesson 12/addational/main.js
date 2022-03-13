@@ -70,10 +70,41 @@ document.body.appendChild(father)
 
 
             commentButton.onclick = function () {
-                
+                fetch(`https://jsonplaceholder.typicode.com/users/` + usersListElement.id + `/comments`)
+                    .then((response) => response.json())
+                    .then((comments) => {
+
+                        for (const comment of comments) {
+                            if (usersListElement.id === comment.postId) {
+                                let CommentsCard = document.createElement(`div`);
+                                CommentsCard.classList.add(`CommentsCard`);
+                                UserCard.append(CommentsCard)
+                                CommentsCard.innerHTML = `
+ <h2><span>ID:</span> ${comment.id} </h2>
+<h3><span>Name:</span> ${comment.name} </h3>
+<h4><span>Email:</span> ${comment.email}</h4>
+<h5><span>Body:</span> ${comment.body}</h5>`
+                            }
+                        }
+                        }
+                    );
             } 
             postButton.onclick = function () {
-                
+                fetch(`https://jsonplaceholder.typicode.com/users/` + usersListElement.id + `/posts`)
+                    .then((response) => response.json())
+                    .then((posts) => {
+                        for (const post of posts) {
+                            if (usersListElement.id===post.userId){
+                                let PostsCard = document.createElement(`div`);
+                                PostsCard.classList.add(`PostsCard`)
+                                UserCard.appendChild(PostsCard)
+                                PostsCard.innerHTML = `
+<h3>id: ${post.id}</h3>
+<h4>title: ${post.title}</h4>
+<h5>body: ${post.body}</h5>`;
+                            }
+                        }
+                    });
             }
         }
     });
