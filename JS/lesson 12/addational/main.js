@@ -4,12 +4,11 @@
 // https://jsonplaceholder.typicode.com/users
 //     кожному елементу юзера створити кнопку, при клику на яку в окремий блок виводяться всі пости поточного юзера.
 //     Кожному елементу post створити кнопку, при клику на яку в окремий блок виводяться всі коментарі поточного поста
-
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((usersList) => {
-let father = document.createElement(`div`);
-document.body.appendChild(father)
+        let father = document.createElement(`div`);
+        document.body.appendChild(father)
         father.classList.add(`father`)
         for (const usersListElement of usersList) {
             let UserCard = document.createElement('div')
@@ -30,15 +29,14 @@ document.body.appendChild(father)
             commentButton.classList.add(`commentButton`)
 
 
-
-            id.innerText = 'Id -'+' '+ usersListElement.id;
-            nameMain.innerText = 'Name - '+' '+ usersListElement.name;
+            id.innerText = 'Id -' + ' ' + usersListElement.id;
+            nameMain.innerText = 'Name - ' + ' ' + usersListElement.name;
             username.innerText = 'Username  - ' + usersListElement.username;
-            email.innerText = 'Email  - '+ usersListElement.email;
+            email.innerText = 'Email  - ' + usersListElement.email;
             addres.innerHTML = '<strong>Addres </strong> :'
             company.innerHTML = '<strong>Company</strong>  :'
             phone.innerText = 'Phone  - ' + usersListElement.phone;
-            website.innerText = 'Website  - ' +usersListElement.website;
+            website.innerText = 'Website  - ' + usersListElement.website;
 
             let street = document.createElement('li')
             let suite = document.createElement('li')
@@ -56,7 +54,7 @@ document.body.appendChild(father)
                 geo.append(geleos)
                 console.log(geleos)
             }
-            addres.append(street,suite,city,zipcode,geo)
+            addres.append(street, suite, city, zipcode, geo)
 
 
             for (const companyElement in usersListElement.company) {
@@ -64,7 +62,7 @@ document.body.appendChild(father)
                 nameC.innerText = usersListElement.company[companyElement]
                 company.appendChild(nameC)
             }
-            UserCard.append(id,nameMain,username,email,addres,website,phone,company,commentButton,postButton)
+            UserCard.append(id, nameMain, username, email, addres, website, phone, company, commentButton, postButton)
             father.appendChild(UserCard)
             UserCard.classList.add('usercard')
 
@@ -74,27 +72,27 @@ document.body.appendChild(father)
                     .then((response) => response.json())
                     .then((comments) => {
 
-                        for (const comment of comments) {
-                            if (usersListElement.id === comment.postId) {
-                                let CommentsCard = document.createElement(`div`);
-                                CommentsCard.classList.add(`CommentsCard`);
-                                UserCard.append(CommentsCard)
-                                CommentsCard.innerHTML = `
+                            for (const comment of comments) {
+                                if (usersListElement.id === comment.postId) {
+                                    let CommentsCard = document.createElement(`div`);
+                                    CommentsCard.classList.add(`CommentsCard`);
+                                    UserCard.append(CommentsCard)
+                                    CommentsCard.innerHTML = `
  <h2><span>ID:</span> ${comment.id} </h2>
 <h3><span>Name:</span> ${comment.name} </h3>
 <h4><span>Email:</span> ${comment.email}</h4>
 <h5><span>Body:</span> ${comment.body}</h5>`
+                                }
                             }
                         }
-                        }
                     );
-            } 
+            }
             postButton.onclick = function () {
                 fetch(`https://jsonplaceholder.typicode.com/users/` + usersListElement.id + `/posts`)
                     .then((response) => response.json())
                     .then((posts) => {
                         for (const post of posts) {
-                            if (usersListElement.id===post.userId){
+                            if (usersListElement.id === post.userId) {
                                 let PostsCard = document.createElement(`div`);
                                 PostsCard.classList.add(`PostsCard`)
                                 UserCard.appendChild(PostsCard)
