@@ -32,13 +32,13 @@ document.body.appendChild(father)
 
 
             id.innerText = 'Id -'+' '+ usersListElement.id;
-            nameMain.innerText = 'Name -'+' '+ usersListElement.name;
-            username.innerText = 'Username  -' + usersListElement.username;
-            email.innerText = 'Email  -'+ usersListElement.email;
+            nameMain.innerText = 'Name - '+' '+ usersListElement.name;
+            username.innerText = 'Username  - ' + usersListElement.username;
+            email.innerText = 'Email  - '+ usersListElement.email;
             addres.innerHTML = '<strong>Addres </strong> :'
             company.innerHTML = '<strong>Company</strong>  :'
-            phone.innerText = 'Phone  -' + usersListElement.phone;
-            website.innerText = 'Website  -' +usersListElement.website;
+            phone.innerText = 'Phone  - ' + usersListElement.phone;
+            website.innerText = 'Website  - ' +usersListElement.website;
 
             let street = document.createElement('li')
             let suite = document.createElement('li')

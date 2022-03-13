@@ -12,13 +12,14 @@
 display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
-.usercard .postButton{margin-top: 5px}
+.usercard .postButton{margin-top: 5px;}
 .usercard .commentButton{margin-top: 5px}
 
-.postButton{cursor: pointer}
-.commentButton{cursor: pointer}
+.postButton{cursor: pointer;background: #f5f0f0;}
+.commentButton{cursor: pointer; background: #e8c0c0;}
 
 .usercard:hover{background-color: gainsboro}
 
