@@ -1,0 +1,27 @@
+
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+}
+
+.usercard {
+    border: gray solid 1px;
+    border-radius: 10px;
+    background: #f6f5f5;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    height: 90px;
+}
+
+.usercard> .button {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.usercard:hover{background-color: gainsboro}

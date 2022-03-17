@@ -1,0 +1,43 @@
+.father{
+    display: flex;
+    /*flex-wrap: wrap;*/
+
+    font-weight: bolder;
+}
+
+.usercard {
+    border: gray solid 1px;
+    border-radius: 10px;
+    background: #f6f5f5;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.usercard .button {margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.usercard:hover{background-color: gainsboro}
+
+.postsCard{
+    border: black solid 1px;
+    border-radius: 10px;
+    background: #f5f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+
+.postsCard h4{margin: 5px}
+
+.button{cursor: pointer;
+    border-radius: 3px;
+}
