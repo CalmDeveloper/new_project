@@ -148,3 +148,119 @@
 //      }
 //  })
 // }
+
+
+
+
+// function timeoutFn(counter, milis) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('async operation', counter);
+//             counter++;
+//             resolve(counter);
+//         }, milis)
+//     });
+// }
+//
+// timeoutFn(0, 2000)
+//     .then(value => {
+//         return timeoutFn(value, 3000);
+//     })
+//     .then(value => timeoutFn(value, 4000));
+
+
+
+
+
+
+
+// setTimeout(() => {
+//     let counter = 0;
+//     console.log('do1', counter);
+//
+// }, 2000);
+
+// setTimeout(() => {
+//     let count = 0;
+//     console.log(`do`, count)
+//     setTimeout(() => {
+//         count++
+//         console.log('do', count);
+//         setTimeout(() => {
+//             count++
+//             console.log('do', count);
+//
+//         }, 2000);
+//     }, 2000);
+// }, 2000)
+
+
+
+
+//
+// function User(name, surname) {
+//     this.name = name;
+//     this.surname = surname;
+// }
+//
+// function Customer(name, surname, password) {
+//     User.apply(this, arguments);
+//     this.passowrd = password;
+// }
+//
+// let customer = new Customer('asd','qwe','zxc');
+// console.log(customer)
+
+
+
+// Array.prototype.print = function (){
+//     for (const item of this) {
+//         console.log(item)
+//     }
+// }
+//
+//
+// let usersList = [
+//     {
+//         id: 1,
+//         name: 'Leanne Graham',
+//         username: 'Bret',
+//         email: 'Sincere@april.biz',
+//         address: {
+//             street: 'Kulas Light',
+//             suite: 'Apt. 556',
+//             city: 'Gwenborough',
+//             zipcode: '92998-3874',
+//             geo: {
+//                 lat: '-37.3159',
+//                 lng: '81.1496'
+//             }
+//         },
+//         phone: '1-770-736-8031 x56442',
+//         website: 'hildegard.org',
+//         company: {
+//             name: 'Romaguera-Crona',
+//             catchPhrase: 'Multi-layered client-server neural-net',
+//             bs: 'harness real-time e-markets'
+//         }
+//     },
+//     {
+//         id: 2,
+//         name: 'Ervin Howell',
+//         username: 'Antonette',
+//         email: 'Shanna@melissa.tv',
+//         address: {
+//             street: 'Victor Plains',
+//             suite: 'Suite 879',
+//             city: 'Wisokyburgh',
+//             zipcode: '90566-7771',
+//             geo: {
+//                 lat: '-43.9509',
+//                 lng: '-34.4618'
+//             }
+//         }
+//     }
+// ];
+// usersList.print()
+
+
