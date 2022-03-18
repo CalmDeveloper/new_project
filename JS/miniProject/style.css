@@ -1,22 +1,27 @@
-
+body{margin: 0;
+    background: whitesmoke;}
 .father{
     display: flex;
     flex-wrap: wrap;
     font-family: "Times New Roman";
     font-weight: bolder;
+    background: whitesmoke;
+    margin: 0;
 }
 
 .usercard {
     border: gray solid 1px;
     border-radius: 10px;
-    background: #f6f5f5;
+    background: #c5bfbf;
     padding: 15px;
     margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 240px;
-    height: 90px;
+    /*width: 240px;*/
+    /*height: 90px;*/
+    width: 685px;
+    height: 100px;
 }
 
 .usercard> .button {
@@ -25,3 +30,8 @@
 }
 
 .usercard:hover{background-color: gainsboro}
+
+
+.button{cursor: pointer;
+    border-radius: 3px;
+}

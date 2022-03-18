@@ -1,25 +1,32 @@
+body{margin: 0;
+    background: whitesmoke;}
 .father{
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 
     font-weight: bolder;
+    justify-content: center;
+    background: whitesmoke;
+    margin: 0;
 }
 
 .usercard {
     border: gray solid 1px;
     border-radius: 10px;
-    background: #f6f5f5;
+    background: #a8a2a2;
     padding: 15px;
     margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    width: 100%;
+    flex-basis: border-box;
 }
 
 .usercard .button {margin-top: 10px;
     font-weight: bold;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .usercard:hover{background-color: gainsboro}
@@ -27,17 +34,21 @@
 .postsCard{
     border: black solid 1px;
     border-radius: 10px;
-    background: #f5f0f0;
+    background: #cec6c6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    margin: 3px;
+    margin: 10px;
+    width: 260px;
 }
 
 
 .postsCard h4{margin: 5px}
 
-.button{cursor: pointer;
-    border-radius: 3px;
+
+
+.postDetailsButton{
+    cursor: pointer;
+    background-color: gray;
 }

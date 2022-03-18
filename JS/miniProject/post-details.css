@@ -1,0 +1,47 @@
+body{margin: 0;
+    background: whitesmoke;
+}
+.father{display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background: whitesmoke;
+    margin: 0;
+}
+.postCard{
+    border: gainsboro solid 1px;
+    background: #a4a0a0;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Calibri;
+    width: 100%;
+    flex-basis: border-box;
+}
+.postCard h3{margin: 10px}
+.postCard h4{margin: 10px}
+.postCard h5{margin: 10px}
+
+
+
+.commentsCard{
+    border: gainsboro solid 1px;
+    background: #d5b9b9;
+    border-radius: 10px;
+    width: 361px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    font-family: Calibri;
+}
+
+.commentsCard h2{margin: 5px}
+.commentsCard h3{margin: 5px}
+.commentsCard h4{margin: 5px}
+.commentsCard h5{margin: 5px}
