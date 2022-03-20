@@ -264,3 +264,18 @@
 // usersList.print()
 
 
+
+
+
+// let data = {a:1,
+// b:2}
+//
+// let btn = document.createElement(`button`);
+// document.body.append(btn)
+// btn.innerText = `click`;
+// btn.onclick = function () {
+//     location.href = `./test.html?data=${JSON.stringify(data)}`;
+//
+// }
+
+
