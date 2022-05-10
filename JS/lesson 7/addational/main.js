@@ -157,90 +157,201 @@
 
 // сlosures.pdf/           /////////////////////////////////////////
 
-// let balance = 100;
-// let transeactionLimite = 100;
-// let historyLogs = [];
-// let card1 = [];
-// let card2 = [];
-// let card3 = [];
-// let key = number
-// let userCard = (number)=>{
-//     if (number===1){return card1}
-//     if (number===2){return card2}
-//     if (number===3){return card3}
-//     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
-// }
-//
-// let putCredits = (...arg)=>{
-//
-//     return balance = balance + arg };
-//
-// let takeCredits = (...arg)=>{
-//     if (arg<=transeactionLimite && arg > balance){return balance = balance - arg}else
-//     {console.error(`You cant take more then ${transeactionLimite} or ${balance}`)}
-//     }
-//
-// let setTranseactionLimite = (...arg)=>{return transeactionLimite = arg + transeactionLimite};
-//
-// let transferCredits = (credit,keyOfCard)=>{
-//     if (credit<=transeactionLimite && credit < balance){return balance = balance-credit}
-// }
 
-
-
-// let userCard = (number)=>{
-//
-//     if (number===1){return card1}
-//     if (number===2){return card2}
-//     if (number===3){return card3}
-//     if (number <=0 && number > 3 ){console.log(`enter one number from 1 to 3`)}
-// }
 
 function userCard(number) {
-    let objCard = {
-        balance: 100,
-        transeactionLimite: 100,
-        historyLogs: [],
-        get key() {
-            if (num === undefined) {
-                num = ++counterKey
-            }
-            if (num >= 1 && num <= 3) {
-                return num
-            } else {
-                console.log(`Параметр key має бути числом в діапазоні від 1-3`);
-                return -1
-            }
+    const getKey = () => {
+        if (number < 1 && number > 3 && number === undefined) {
+            console.error('Помилка! Введіть номер з діапазоном [1,3]')
+        } else if (number => 1 && number <= 3) {
+            return number
         }
+    };
+    const getDate = () => {
+        return `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}, ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
     }
 
 
-    return  {
-        putCredits: (...arg) => {
-            balance = objCard.balance + arg
-        },
-        takeCredits: (...arg) => {
-            if (arg <= transeactionLimite && arg > balance) {
-                return balance = balance - arg
-            } else {
-                console.error(`You cant take more then ${transeactionLimite} or ${balance}`)
+    let objCard1 = {
+        balance: 100,
+        transactionLimit: 100,
+        historyLogs: [],
+        key: getKey()
+
+    }
+    let objCard2 = {
+        balance: 100,
+        transactionLimit: 100,
+        historyLogs: [],
+        key: getKey()
+
+    }
+    let objCard3 = {
+        balance: 100,
+        transactionLimit: 100,
+        historyLogs: [],
+        key: getKey()
+    }
+    const transferMoney =  (money, cardKey) => {
+        if (cardKey === 1) {
+            card1.putCredits(money)
+        } else if (cardKey === 2) {
+            card2.putCredits(money)
+        } else if (cardKey === 3) {
+            card3.putCredits(money)
+        }
+    }
+
+    return {
+        getCardOptions() {
+            if (getKey() === 1) {
+                {
+                    return objCard1
+                }
+            } else if (getKey() === 2) {
+                {
+                    return objCard2
+                }
+            } else if (getKey() === 3) {
+                {
+                    return objCard3
+                }
             }
         },
-        setTranseactionLimite: (...arg) => {
-            return transeactionLimite = arg + transeactionLimite
-        },
-        transferCredits: (credit, keyOfCard) => {
-            if (credit <= transeactionLimite && credit < balance) {
-                return balance = balance - credit
+        putCredits(money) {
+            if (getKey() === 1) {
+                const history = {operationType: 'Received credits', credits: money, operationTime: getDate()}
+                objCard1.historyLogs.push(history)
+                return objCard1.balance += money
+
+            } else if (getKey() === 2) {
+                const history = {operationType: 'Received credits', credits: money, operationTime: getDate()}
+                objCard2.historyLogs.push(history)
+                return objCard2.balance += money
+            } else if (getKey() === 3) {
+                const history = {operationType: 'Received credits', credits: money, operationTime: getDate()}
+                objCard3.historyLogs.push(history)
+                return objCard3.balance += money
             }
         },
-        GetCardOptions: ()=>{
-return objCard
+        takeCredits(money) {
+            if (getKey() === 1) {
+                if (objCard1.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard1.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Withdrawal of credits', credits: money, operationTime: getDate()}
+                    objCard1.historyLogs.push(history)
+                    return objCard1.balance -= money
+                }
+            }
+            if (getKey() === 2) {
+                if (objCard2.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard2.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Withdrawal of credits', credits: money, operationTime: getDate()}
+                    objCard2.historyLogs.push(history)
+                    return objCard2.balance -= money
+                }
+            }
+            if (getKey() === 3) {
+                if (objCard3.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard3.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Withdrawal of credits', credits: money, operationTime: getDate()}
+                    objCard3.historyLogs.push(history)
+                    return objCard3.balance -= money
+                }
+            }
+        },
+        setTransactionLimit(money) {
+            if (getKey() === 1) {
+                const history = {operationType: 'Transaction limit change', credits: money, operationTime: getDate()}
+                objCard1.historyLogs.push(history)
+                return objCard1.transactionLimit = money
+
+            } else if (getKey() === 2) {
+                const history = {operationType: 'Transaction limit change', credits: money, operationTime: getDate()}
+                objCard2.historyLogs.push(history)
+                return objCard2.transactionLimit = money
+            } else if (getKey() === 3) {
+                const history = {operationType: 'Transaction limit change', credits: money, operationTime: getDate()}
+                objCard3.historyLogs.push(history)
+                return objCard3.transactionLimit = money
+            }
+        },
+        transferCredits(money, cardKey) {
+
+
+            if (getKey() === 1) {
+                if (objCard1.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard1.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
+                    objCard1.historyLogs.push(history)
+                    transferMoney(money, cardKey)
+                    return objCard1.balance -= money;
+                }
+            }
+
+            if (getKey() === 2) {
+                if (objCard2.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard2.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
+                    objCard2.historyLogs.push(history)
+                    transferMoney(money, cardKey)
+                    return objCard2.balance -= money;
+                }
+            }
+            if (getKey() === 3) {
+                if (objCard3.transactionLimit < money) {
+                    console.error('Transaction limit exceeded!!!')
+                } else if (objCard3.balance < money) {
+                    console.error('Not enough funds in the account!!!')
+                } else {
+                    const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
+                    objCard3.historyLogs.push(history)
+                    transferMoney(money, cardKey)
+                    return objCard3.balance -= money;
+                }
+            }
+
         }
     }
 }
 
-let a = userCard(1)
-a.putCredits(100)
-a.GetCardOptions
+let card1 = userCard(1)
+let card2 = userCard(2)
+console.log(card1.getCardOptions())
+console.log(card2.getCardOptions())
+
+
+card1.transferCredits(20, 2)
+
+console.log(card1.getCardOptions())
+console.log(card2.getCardOptions())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
