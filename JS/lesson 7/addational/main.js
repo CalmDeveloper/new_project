@@ -297,7 +297,7 @@ function userCard(number) {
                     const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
                     objCard1.historyLogs.push(history)
                     transferMoney(money, cardKey)
-                    return objCard1.balance -= money;
+                    return objCard1.balance -= money+(money * 0.005);
                 }
             }
 
@@ -310,7 +310,7 @@ function userCard(number) {
                     const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
                     objCard2.historyLogs.push(history)
                     transferMoney(money, cardKey)
-                    return objCard2.balance -= money;
+                    return objCard2.balance -= money+(money * 0.005);
                 }
             }
             if (getKey() === 3) {
@@ -322,7 +322,7 @@ function userCard(number) {
                     const history = {operationType: 'Transfer money', credits: money, operationTime: getDate()}
                     objCard3.historyLogs.push(history)
                     transferMoney(money, cardKey)
-                    return objCard3.balance -= money;
+                    return objCard3.balance -= money+(money * 0.005);
                 }
             }
 
