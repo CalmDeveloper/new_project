@@ -278,5 +278,38 @@
 //
 // }
 
+// const arr=[1,2,3,4,5,6,7,8,9]
+// for (let i = 0; i < arr.length; i=i+3) {
+//   console.log(arr[i])
+// }
+
+// const arr=[1,2,3,4,5,6,7,8,9]
+// for (let i = arr.length-1; i >= 0; i=i-2) {
+//     console.log(arr[i])
+// }
 
 
+// const arr=[1,2,3,4,5,6,7,8,9]
+
+// for (const number of arr) {
+//     console.log(number)
+// }
+
+
+// let i =0
+// do {
+//     i += 1;
+//     console.log(i);
+// } while (i < 5);
+
+//
+// const arr = {
+//     name: 'taras', lastName: 'ivanovych',
+//     add: {
+//         age: 10, city: 'lviv'
+//     }
+// }
+//
+// for (const arrElement in arr) {
+//     console.log(arrElement)
+// }
