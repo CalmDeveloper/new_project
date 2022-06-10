@@ -313,3 +313,73 @@
 // for (const arrElement in arr) {
 //     console.log(arrElement)
 // }
+
+// const x = (number) => {
+//     return Number.isInteger(number) ? 'integer' : 'notNumber'
+//
+// }
+// x(5)
+
+//
+// [12:42] Oleksandr Stepanov
+
+// Implement check for integer
+
+// function isInteger(num) {​
+// // TODO
+// }​
+// ​[12:59] Oleksandr Stepanov
+
+
+
+
+
+// Implement the function flatten
+
+// which accepts the data in a format [1, [2], [3, 4], [[5]]]
+
+// and returns [1, 2, 3, 4, 5]
+
+// function flatten(arr) {​
+//
+// // TODO
+//
+// }​
+
+
+
+
+
+
+
+
+
+
+// const arr = [1, [2],[3, 4],[[5]]]
+//
+// function flatten(array) {
+//     const result = [];
+//     (function flat(array) {
+//         array.forEach(function(element) {
+//             if (Array.isArray(element)) flat(element);
+//             else result.push(element);
+//         });
+//     })(array);
+//     return result;
+// }
+//
+// console.log(flatten(arr));
+
+
+
+//
+// let num = 22.5
+// const isInteger = (num) => {
+//     if(typeof num ==="number" && num % 1 === 0){
+//         return `${num} is an integer`
+//     }else {
+//   return  `${num} is not integer`
+//     }
+// }
+//
+// console.log(isInteger(num));
